@@ -1,0 +1,494 @@
+<!--
+  | Website designed by JstnLT (https://jstnlt.my.id)
+  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snowball fight Bot</title>
+    <link rel="icon" type="image/png" href="assets/img/snowlogo.png"/>
+
+
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="#">
+          <strong>Snowball fight bot</strong>
+
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="#" class="navbar-item is-tab">
+            Home
+          </a>
+
+          <a href="#features" class="navbar-item is-tab">
+            Commands
+          </a>
+
+          <a href="#stats" class="navbar-item is-tab">
+            Stats
+          </a>
+
+          <a href="#" class="navbar-item is-tab">
+            Docs
+          </a>
+           <a href="#terms" class="navbar-item is-tab">
+            Terms and Privacy
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="#" class="navbar-item is-tab" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+
+         
+
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="https://discord.com/oauth2/authorize?client_id=1049741797305364580&scope=bot%20applications.commands&permissions=2146958847" class="button is-blurple">
+                <strong
+                  ><i class="fa-solid fa-right-to-bracket mr-2"></i>
+                  Add Bot</strong
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero bg-base is-fullheight">
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+              <p class="title has-text-white has-text-weight-bold">
+                Time to add Snowball fight Bot to your server.
+              </p>
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                Enjoy this Christmas with Snowball fight bot collect snowballs throw snowballs at ya friends have fun.
+              </p>
+              <div class="buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1049741797305364580&scope=bot%20applications.commands&permissions=2146958847" class="button is-info">
+                  <strong>Add To Discord</strong>
+                </a>
+
+                <a href="https://discord.gg/KPp88H7WYs" class="button is-primary is-outlined">
+                  <strong><i class="fa-solid fa-crown"></i>Support</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+              <img
+                class="image has-image-centered vert-move mt-4"
+                src="https://media.discordapp.net/attachments/1035482910372937791/1049773236797321286/png_20221206_211851_0000.png"
+                alt="snowball fight bot"
+                style="width: 20rem;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#features"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+
+    <!-- Hero Waves Start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#1a2634"
+        fill-opacity="1"
+        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Hero Waves End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Commands</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="shape-right" data-aos="fade-up-left">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#9AAAE3"
+              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">Collect Snowballs <span class="blurple">#1</span></h4>
+            <p class="subtitle mt-3">
+              Collect snowballs using /collect and throw at your friends using /throw.Snowball fight bot comes with a great fun and experience during christmas.
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/a3zgd-39jtf.svg"
+              alt="feature1 img"
+              style="width: 20rem;"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      <!-- single feature start (Right) -->
+      <div class="single-feature">
+        <div class="shape-left" data-aos="fade-up-right">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#9AAAE3"
+              d="M54.2,-67.2C69.4,-63.5,80.4,-46.6,84.6,-28.7C88.7,-10.8,86,8.1,76.8,21.4C67.6,34.7,51.9,42.3,38.1,50.3C24.2,58.3,12.1,66.7,-2.8,70.5C-17.7,74.3,-35.3,73.6,-45.6,64.5C-55.9,55.3,-58.8,37.7,-63.3,21.2C-67.7,4.7,-73.7,-10.6,-71.8,-25.4C-69.8,-40.2,-59.9,-54.5,-46.6,-58.9C-33.3,-63.2,-16.7,-57.6,1.4,-59.6C19.5,-61.5,39,-71,54.2,-67.2Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column" data-aos="fade-right">
+            <img
+              class="image has-image-centered"
+              src="assets/img/amkjj-04etp.svg"
+              alt="feature1 img"
+              style="width: 20rem;"
+            />
+          </div>
+          <div class="column">
+            <h4 class="title">
+              Player Stats <span class="has-text-primary">#2</span>
+            </h4>
+            <p class="subtitle mt-3">
+             Shows statistical data like the nunber of throws,snowballs in hand,success hiting ratio etc.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Right) -->
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="shape-right" data-aos="fade-up-left">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#9AAAE3"
+              d="M42.7,-62.9C50.9,-52.8,50.1,-34.4,51.7,-19.2C53.4,-4,57.4,8,56.6,20.8C55.8,33.7,50.1,47.4,39.9,53.8C29.6,60.1,14.8,59.1,0.4,58.5C-14,58,-28,57.9,-38,51.5C-48.1,45,-54.3,32.3,-61.3,18.1C-68.4,4,-76.4,-11.7,-71.9,-22.7C-67.4,-33.6,-50.4,-39.8,-36.3,-47.9C-22.2,-56.1,-11.1,-66.3,3.1,-70.5C17.2,-74.7,34.5,-72.9,42.7,-62.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">
+              Leaderboard <span class="has-text-warning">#3</span>
+            </h4>
+            <p class="subtitle mt-3">
+             Be the number one in leaderboard and become popular amoung communities.Global Leaderboard consisting of Top 10 players.
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/Screenshot-2022-12-10-062546.svg"
+              alt="feature1 img"
+              style="width: 20rem;"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      <!-- single feature start (Right) -->
+      <div class="single-feature">
+        <div class="shape-left" data-aos="fade-up-right">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#9AAAE3"
+              d="M54.2,-67.2C69.4,-63.5,80.4,-46.6,84.6,-28.7C88.7,-10.8,86,8.1,76.8,21.4C67.6,34.7,51.9,42.3,38.1,50.3C24.2,58.3,12.1,66.7,-2.8,70.5C-17.7,74.3,-35.3,73.6,-45.6,64.5C-55.9,55.3,-58.8,37.7,-63.3,21.2C-67.7,4.7,-73.7,-10.6,-71.8,-25.4C-69.8,-40.2,-59.9,-54.5,-46.6,-58.9C-33.3,-63.2,-16.7,-57.6,1.4,-59.6C19.5,-61.5,39,-71,54.2,-67.2Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div class="columns mt-6">
+          <div class="column" data-aos="fade-right">
+            <img
+              class="image has-image-centered"
+              src="assets/img/leaader.svg"
+              alt="feature1 img"
+              style="width: 20rem;"
+            />
+          </div>
+          <div class="column">
+            <h4 class="title">Quests <span class="has-text-info">#4</span></h4>
+            <p class="subtitle mt-3">
+             Do quests get rewards Check out your current quests by doing /quests command
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="columns mt-6">
+         
+          <div class="column">
+            <h4 class="title">Pvp <span class="has-text-info">#5</span></h4>
+            <p class="subtitle mt-3">
+             Defeat the Snow monsters roaming through cities and save the city 
+            </p>
+          </div>
+        </div>
+      </div>
+       <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/fight.svg"
+              alt="feature1 img"
+              style="width: 20rem;"
+            />
+          </div>
+      <!-- single feature end (Right) -->
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Stats</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <div class="columns mt-6">
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">800+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">20+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Commands</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">539634+</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-users"></i> Users</span>
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section End -->
+    
+<section class="">
+      <div class="#terms">
+        <div class="#terms">
+          <p class="title has-text-weight-bold">
+            
+             <div id="terms">
+               
+              <h1 style="color:red;text-align:center">Terms and Conditions</h1>
+<br>
+               <p>Last updated: December 12, 2022</p>
+               <br>
+Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance. Pottah its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
+<p>Last updated: December 12, 2022</p>
+<p>Please read these terms and conditions carefully before using Our Service.</p>
+<br>
+
+<h1><strong>Acknowledgment</strong></h1>
+               <br>
+<p>These are the Terms and Conditions governing the use of this Service and the agreement that operates between You and the Company. These Terms and Conditions set out the rights and obligations of all users regarding the use of the Service.</p>
+<p>Your access to and use of the Service is conditioned on Your acceptance of and compliance with these Terms and Conditions. These Terms and Conditions apply to all visitors, users and others who access or use the Service.</p>
+<p>By accessing or using the Service You agree to be bound by these Terms and Conditions. If You disagree with any part of these Terms and Conditions then You may not access the Service.</p>
+<br>
+<h1><strong>Links to Other Websites</strong></h1>
+               <br>
+<p>Our Service may contain links to third-party web sites or services that are not owned or controlled by the Developers of Snowball fight Bot.</p>
+<p>The Snowball fight Bot Team has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that the Developers shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+<p>We strongly advise You to read the terms and conditions and privacy policies of any third-party web sites or services that You visit.</p>
+              <br>  
+<h1><strong>Termination</strong></h1>
+<p>We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.</p>
+<p>Upon termination, Your right to use the Service will cease immediately.</p>
+ <br>
+<h1><strong>Disclaimer</strong>></h1>
+<p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance. Developers of Snowball fight Bot its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p>
+               <br>
+<h1><strong>Changes to These Terms and Conditions</strong></h1>
+<p>We reserve the right, at Our sole discretion, to modify or replace these Terms at any time. If a revision is material We will make reasonable efforts to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at Our sole discretion.</p>
+<p>By continuing to access or use Our Service after those revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, in whole or in part, please stop using the website and the Service.</p>
+                <br>
+ <h1 style="color:red;text-align:center">Privacy Policy</h1>
+<br>
+<p>Last updated: December 12, 2022</p>
+<p>This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data. We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy</p>
+       <br>        
+<h1><strong>Personal Data</strong></h1>
+<p> We store  User IDs  in our database to make the bot perform some set actions including but not limited to sending messages to a channel, storing economy game data linked to the user ID and more.</p>
+               <br>
+<h1><strong>Message Content</strong></h1>
+<p> Bot does not store any user messages. </p> 
+               <br>
+      <h1><strong>Use of Data</strong></h1>
+               
+<p>Snowball fight Bot Bot uses the collected data for various purposes: 1. To provide and maintain our Service 2. To notify you about changes to our Service 3. To allow you to participate in interactive features of our Service when you choose to do so 4. To monitor the usage of our Service 5. To detect, prevent and address technical issues 6. To provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information </p> 
+               <br>
+      <h1><strong>Transfer of Data</strong></h1>
+<p> Your information, including Personal Data, may be transferred to - and maintained on - computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. If you are located outside United States and choose to provide information to us, please note that we transfer the data, including Personal Data, to United States and process it there. Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer. Snowball fight Bot Team will take all the steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organisation or a country unless there are adequate controls in place including the security of your data and other personal information. </p> 
+               <br>
+      <h1><strong>Disclosure of Data</strong></h1>
+<p>Snowball fight Bot may disclose your Personal Data in the good faith belief that such action is necessary to: 1. To comply with a legal obligation 2. To protect and defend the rights or property of Snowball fight Bot. To prevent or investigate possible wrongdoing in connection with the Service 4. To protect the personal safety of users of the Service or the public 5. To protect against legal liability</p> 
+    
+               <br>
+               <h1><strong>Security of Data</strong></h1>
+<p> The security of your data is important to us but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security. </p> 
+               <br>
+      <h1><strong>Links to Other Sites</strong></h1>
+<p> Our Service may contain links to other sites that are not operated by us. If you click a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services. </p> 
+               <br>
+      <h1><strong>Children's Privacy</strong></h1>
+<p> Our Service does not address anyone under the age of 13 ("Children"). We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your Child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers. </p> 
+               <br>
+      <h1><strong>Changes to This Privacy Policy</strong></h1>
+<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page. </p> 
+      
+      <p>
+      <br>
+      <h1><strong>Contact Us</strong></h1>
+<p>If you have any questions about these Terms and Conditions, You can contact us:</p>
+<ul>
+ <li>By email: harishankarchess@gmail.com</li>
+</ul> 
+               <audio controls autoplay>
+ 
+  <source src="assets/img/jingle.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+               
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p class="title has-text-weight-bold">
+            Ready to try <span class="blurple">[Snowball fight]</span>?
+          </p>
+          <p class="subtitle mt-3 has-text-gray">
+           Get Ready for Fun,Cause should only have the fun . Happy Chritmas and have a wonderfull time with your loved ones and family. 
+          </p>
+          <a href="#" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-book"></i> Get Started</strong></a
+          >
+        </div>
+
+        <div class="column"></div>
+      </div>
+    </section>
+    <!-- Invite Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="https://discord.gg/KPp88H7WYs" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          &nbsp; &nbsp;
+         
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">[SnowBall Fight]</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright [Bot Owner]. All Rights
+          Reserved.
+        </p>
+
+        <p style="letter-spacing: 0.1em;" class="is-uppercase">
+          A Project By
+          <a
+            href="#"
+            class="blurple has-text-weight-bold"
+            target="_blank"
+            >Pottah#6762</a
+          >
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
